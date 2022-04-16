@@ -1,23 +1,20 @@
 import React from 'react';
-//desde la prop traida de Chart darle dinamismo a las columnas
-//mapeo de generos reemplazar por colores
-//llamada a la api y agregar mapeo de todos los productos
-
 
 function ChartRow(props){
+    // console.log("ONE PRODUCT DENTRO DE CHART", props)
     return (
                 <tr>
-                    <td>{props.Title}</td>
-                    <td>{props.Length}</td>
-                    <td>{props.Rating}</td>
-                    <td></td>
-                    <td></td>
+                    <td>{props.name}</td>
+                    <td>{props.description}</td>
+                    <td>{props.price}</td>
+                    <td>{props.byTexture}</td>
+                    <td>{props.byRoom}</td>
                     <td><ul>
-                            {props.Categories.map( (category,i) => 
+                            {props.color.map( (category,i) => 
                                 <li key={`category ${i}`}>{category}</li>
-                            )}
+                            ) }
                         </ul></td>
-                    <td><i class="fas fa-eye"></i></td>
+                    <td><a href={props.detail}><i class="fas fa-eye"></i></a></td>
                     <td><i class="fas fa-pencil-alt"></i></td>
                     <td><i class="fas fa-trash-alt"></i></td>
                     

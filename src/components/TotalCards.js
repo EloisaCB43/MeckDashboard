@@ -6,24 +6,28 @@ import SmallCard from './SmallCard';
 //(opcional)darle funcionalidad a las tarjetas: products al mismo de action de products 
 //color de los detalles de las tarjetas en negro todos 
 
-
+//LLAMADO A LA API
 /*  Cada set de datos es un objeto literal */
 
 /* <!-- Total Products --> */
 
+function TotalCards({products, users}){
+
+
 let totalProducts = {
     title: 'Total Products',
     color: '', 
-    cuantity: "100",
+    quantity: `${products.count}`,
+    // this.products.count,
     icon: 'fa-couch'
 }
-let productsFromApi = "";
+
 /* <!-- Total users --> */
 
 let totalUsers = {
     title:' Total Users', 
     color:'success', 
-    cuantity: '100',
+    quantity: `${users.total}`,
     icon:'fa-user-check'
 }
 
@@ -32,30 +36,30 @@ let totalUsers = {
 let byTexture = {
     title:'Categories By Texture' ,
     color:'warning',
-    cuantity:'49',
+    quantity:`${Object.keys(products.countByCategories.byTexture).length}`,
     icon:'fa-horse'
 }
 
-/* <!-- Actors quantity --> */
+/* <!-- categories quantity --> */
 
 let byRoom = {
     title:'Categories by room' ,
     color:'warning',
-    cuantity:'49',
+    quantity:`${Object.keys(products.countByCategories.byRoom).length}`,
     icon:'fa-door-open'
 }
 
 
+
 let cartProps = [totalProducts, totalUsers, byRoom, byTexture];
 
-function ContentRowMovies(){
     return (
     
         <div className="row">
             
-            {cartProps.map( (movie, i) => {
+            {cartProps.map( (products, i) => {
 
-                return <SmallCard {...movie} key={i}/>
+                return <SmallCard {...products} key={i}/>
             
             })}
 
@@ -63,4 +67,4 @@ function ContentRowMovies(){
     )
 }
 
-export default ContentRowMovies;
+export default TotalCards;

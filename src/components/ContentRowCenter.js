@@ -1,17 +1,21 @@
 import React from 'react';
-import LastMovieInDb from './LastMovieInDb';
-import GenresInDb from './GenresInDb';
-//Cambiar nombres de componentes
-function ContentRowCenter(){
+import LastProductInDB from './LastProductInDB';
+import CategoriesInDB from './CategoriesInDB';
+function ContentRowCenter({products}){
+    // console.log("PRODUCTS EN CONTENT ROW", products)
+    let lastProduct = products.data.slice(-1).pop();
+    // console.log("LAST PRODUCTS EN CONTENT ROW", lastProduct)
+    // data.push(lastProduct)
     return (
         <div className="row">
             
-            {/*<!-- Last Movie in DB -->*/}
-            <LastMovieInDb />
-            {/*<!-- End content row last movie in Data Base -->*/}
+            {/*<!-- Last Product in DB -->*/}
+            {products && <>
+            <LastProductInDB lastProduct={lastProduct}/>
+            {/*<!-- End content row last products in Data Base -->*/}
 
-            {/*<!-- Genres in DB -->*/}
-            <GenresInDb />
+            {/*<!-- Categories in DB -->*/}
+            <CategoriesInDB categories={products.countByCategories}/></>}
 
         </div>
     )
