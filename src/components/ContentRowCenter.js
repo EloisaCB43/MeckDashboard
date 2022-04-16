@@ -10,12 +10,12 @@ function ContentRowCenter({products}){
         <div className="row">
             
             {/*<!-- Last Product in DB -->*/}
-            {products && <>
+            {products && (<>
             <LastProductInDB lastProduct={lastProduct}/>
             {/*<!-- End content row last products in Data Base -->*/}
 
             {/*<!-- Categories in DB -->*/}
-            <CategoriesInDB categories={products.countByCategories}/></>}
+            <CategoriesInDB categories={products.countByCategories}/></>)}
 
         </div>
     )

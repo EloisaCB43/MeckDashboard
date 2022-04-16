@@ -38,7 +38,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                    <a className="nav-link collapsed" href="http://localhost/4000">
+                    <a className="nav-link collapsed" href="http://localhost:4000">
                         <i className="fas fa-globe"></i>
                         <span>Go to website</span>
                     </a>
@@ -46,7 +46,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Charts -->*/}
                 <li className="nav-item">
-                    <a className="nav-link" href="htt">
+                    <a className="nav-link" href="https://github.com/kevald12/Grupo_6_MeckDesign">
                         <i className="fas fa-code-branch"></i>
                         <span>Go to Github</span></a>
                 </li>

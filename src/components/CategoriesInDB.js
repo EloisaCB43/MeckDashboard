@@ -56,10 +56,10 @@ function () {
         </div>
         <div className="card-body">
           <div className="row">
-            {byRoom && byRoomCategories.map(oneCategory => 
+            {byRoom && categories &&  byRoomCategories.map(oneCategory => 
             <EachCategory categoryKey={oneCategory} categoryObject={categories} byRoom={byRoom}/>
               )}
-               {byTexture && byTextureCategories.map(oneCategory => 
+               {byTexture && categories && byTextureCategories.map(oneCategory => 
             <EachCategory categoryKey={oneCategory} categoryObject={categories} byRoom={byRoom}/>
               )}
             </div>
