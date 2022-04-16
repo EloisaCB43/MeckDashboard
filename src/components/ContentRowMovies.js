@@ -9,34 +9,44 @@ import SmallCard from './SmallCard';
 
 /*  Cada set de datos es un objeto literal */
 
-/* <!-- Movies in DB --> */
+/* <!-- Total Products --> */
 
-let moviesInDB = {
-    title: 'Movies in Data Base',
-    color: 'primary', 
-    cuantity: 21,
-    icon: 'fa-clipboard-list'
+let totalProducts = {
+    title: 'Total Products',
+    color: '', 
+    cuantity: "100",
+    icon: 'fa-couch'
+}
+let productsFromApi = "";
+/* <!-- Total users --> */
+
+let totalUsers = {
+    title:' Total Users', 
+    color:'success', 
+    cuantity: '100',
+    icon:'fa-user-check'
 }
 
-/* <!-- Total awards --> */
+/* <!-- By Texture --> */
 
-let totalAwards = {
-    title:' Total awards', 
-    color:'success', 
-    cuantity: '79',
-    icon:'fa-award'
+let byTexture = {
+    title:'Categories By Texture' ,
+    color:'warning',
+    cuantity:'49',
+    icon:'fa-horse'
 }
 
 /* <!-- Actors quantity --> */
 
-let actorsQuantity = {
-    title:'Actors quantity' ,
+let byRoom = {
+    title:'Categories by room' ,
     color:'warning',
     cuantity:'49',
-    icon:'fa-user-check'
+    icon:'fa-door-open'
 }
 
-let cartProps = [moviesInDB, totalAwards, actorsQuantity];
+
+let cartProps = [totalProducts, totalUsers, byRoom, byTexture];
 
 function ContentRowMovies(){
     return (

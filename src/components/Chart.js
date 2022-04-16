@@ -19,7 +19,7 @@ let tableRowsData = [
     
 ]
 //llamado a la api de productos 
-//cambiar info de la tabla: name - description - price - byRoom - byTexture - Colors - Detail - Edit - Delete
+
 //pasar props de apicall al chartRow
 //si no se hace llamada a la api aca quitar mapeo y dejar solo chartRow dentro del tbody
 
@@ -34,17 +34,25 @@ function Chart (){
                             <tr>
                                 <th>Name</th>
                                 <th>Description</th>
-                                <th>Rating</th>
-                                <th>Género</th>
-                                <th>Premios</th>
+                                <th>Price</th>
+                                <th>By Room</th>
+                                <th>By Texture</th>
+                                <th>Color</th>
+                                <th>Detail</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
-                                <th>Título</th>
-                                <th>Duración</th>
-                                <th>Rating</th>
-                                <th>Género</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                                <th>By Room</th>
+                                <th>By Texture</th>
+                                <th>Color</th>
+                                <th>Detail</th>
+                                <th>Edit</th>
                                 <th>Delete</th>
                             </tr>
                         </tfoot>

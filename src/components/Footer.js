@@ -3,9 +3,9 @@ import React from 'react';
 function Footer(){
     return (
         <React.Fragment>
-			<footer className="sticky-footer bg-white">
+			<footer className="sticky-footer bg-gradient-footer">
 				<div className="container my-auto">
-					<div className="copyright text-center my-auto">
+					<div className="copyright text-center my-auto text-white">
 						<span>Copyright &copy; Meck Dashboard 2022</span>
 					</div>
 				</div>

@@ -1,10 +1,8 @@
 import React from 'react';
 //desde la prop traida de Chart darle dinamismo a las columnas
 //mapeo de generos reemplazar por colores
-//Agregar los iconos
 //llamada a la api y agregar mapeo de todos los productos
-//En la columna detail un ICONO DE OJITO que nos lleve al link del detail 
-//en Edit ICONO DE LAPIZ y en Delete ICONO DE TARRITO
+
 
 function ChartRow(props){
     return (
@@ -12,15 +10,17 @@ function ChartRow(props){
                     <td>{props.Title}</td>
                     <td>{props.Length}</td>
                     <td>{props.Rating}</td>
-                    <td>
-                        <ul>
+                    <td></td>
+                    <td></td>
+                    <td><ul>
                             {props.Categories.map( (category,i) => 
                                 <li key={`category ${i}`}>{category}</li>
                             )}
-                        </ul>
-                    </td>
-                    <td>{props.Awards}</td>
-                    <td>icono de delete</td>
+                        </ul></td>
+                    <td><i class="fas fa-eye"></i></td>
+                    <td><i class="fas fa-pencil-alt"></i></td>
+                    <td><i class="fas fa-trash-alt"></i></td>
+                    
                 </tr>
             )
     }

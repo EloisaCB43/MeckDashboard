@@ -7,12 +7,21 @@ import React from "react";
 //ver colores en ejecutables.txt
 function LastMovieInDb() {
   return (
+   
     <div className="col-lg-6 mb-4">
       <div className="card shadow mb-4">
-        <div className="card-header py-3">
-          <h5 className="m-0 font-weight-bold text-gray-800">
+        <div className="card-header py-3"> <ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">By Room</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">By Texture</a>
+  </li>
+  </ul>
+  
+          {/* <h5 className="m-0 font-weight-bold text-gray-800">
             Genres in Data Base
-          </h5>
+          </h5> */}
         </div>
         <div className="card-body">
           <div className="row">
