@@ -1,6 +1,9 @@
 import React from 'react';
 import foto from '../assets/images/jordan-walke.png';
-
+//cambiar iconos -- agregar varita magica de crear 
+//cambiar user avatar (opcional: funcionalidad de login)
+//cambiar nombre de user
+// Hacerlo negro de bg y palabritas e iconos en blanco
 function TopBar(){
     return(
         <React.Fragment>

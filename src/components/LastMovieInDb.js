@@ -1,5 +1,8 @@
 import React from 'react';
 import imagenFondo from '../assets/images/mandalorian.jpg';
+//cambiar boton a negro que se torne blanco como el de Sign In, centrado y justo del size del texto interno
+//traer de api foto, descripcion, precio y arriba de la descripcion el nombre del producto
+// revisar size de la imagen
 
 function LastMovieInDb(){
     return(

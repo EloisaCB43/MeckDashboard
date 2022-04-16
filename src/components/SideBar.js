@@ -1,6 +1,10 @@
 import React from 'react';
-import image from '../assets/images/logo-DH.png';
-
+import image from '../assets/images/logo-meck-design-black.png';
+//traer logo de meck para fondo negro y reemplazar logo DH
+//Actions-NavItems: link acceso al sitio web - link acceso al github - link acceso a todos los productos - link acceso a todos los usuarios
+//cambiar navItem Dashboard para que diga "Dashboard - Meck Design" y cambiar icono a uno a decidir OPCION => <FontAwesomeIcon icon="fa-solid fa-tree" />
+//iconos de actions: github <FontAwesomeIcon icon="fa-brands fa-github" /> | sitio web <FontAwesomeIcon icon="fa-solid fa-globe" />  | products <FontAwesomeIcon icon="fa-solid fa-couch" /> | users <FontAwesomeIcon icon="fa-solid fa-user-group" />
+//cambiar background color a negro y palabritas en blanco
 function SideBar(){
     return(
         <React.Fragment>
@@ -21,7 +25,7 @@ function SideBar(){
                 <li className="nav-item active">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Dashboard - DH movies</span></a>
+                        <span>Dashboard - Meck Design</span></a>
                 </li>
 
                 {/*<!-- Divider -->*/}

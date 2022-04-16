@@ -1,5 +1,10 @@
 import React from "react";
-
+//traer de la api los generos dentro de byroom y dentro de bytexture
+//Modificar genresinDB para que muestre los generos dentro de ByRoom y byTexture (dentro de la misma tarjeta que muestre las dos opciones y que una se quede opaca mientras se muestra la otra)
+//Que las tarjetas de cada categoria muestren el total de productos
+//Chequear colores de las tarjetas
+//ver si fondo negro y cajitas blancas con un mouseOver que las vuelva mas claras (gris violeta o mas claro)
+//ver colores en ejecutables.txt
 function LastMovieInDb() {
   return (
     <div className="col-lg-6 mb-4">

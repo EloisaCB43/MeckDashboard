@@ -1,6 +1,12 @@
 import React from 'react';
 import SmallCard from './SmallCard';
 
+//Tarjetas superiores: 1 users - 1 products - 1 byRoom - 1 byTextures
+//cambiar iconos: users     icon:'fa-user-check' | products: <FontAwesomeIcon icon="fa-solid fa-couch" /> | byRoom <FontAwesomeIcon icon="fa-solid fa-door-open" /> | byTexture: <FontAwesomeIcon icon="fa-solid fa-horse" />
+//(opcional)darle funcionalidad a las tarjetas: products al mismo de action de products 
+//color de los detalles de las tarjetas en negro todos 
+
+
 /*  Cada set de datos es un objeto literal */
 
 /* <!-- Movies in DB --> */
