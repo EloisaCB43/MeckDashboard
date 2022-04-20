@@ -3,7 +3,8 @@ import React from 'react';
 function ChartRow(props){
     // console.log("ONE PRODUCT DENTRO DE CHART", props)
     return (
-                <tr>
+        <>
+                <tr id="productsChart">
                     <td>{props.name}</td>
                     <td>{props.description}</td>
                     <td>{props.price}</td>
@@ -12,13 +13,13 @@ function ChartRow(props){
                     <td><ul>
                             {props.color.map( (category,i) => 
                                 <li key={`category ${i}`}>{category}</li>
-                            ) }
+                                ) }
                         </ul></td>
                     <td><a href={props.detail}><i class="fas fa-eye"></i></a></td>
                     <td><i class="fas fa-pencil-alt"></i></td>
                     <td><i class="fas fa-trash-alt"></i></td>
-                    
                 </tr>
+                </>
             )
     }
     

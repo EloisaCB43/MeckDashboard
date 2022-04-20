@@ -6,7 +6,16 @@ import image from '../assets/images/logo-meck-design-black.png';
 //iconos de actions: github <FontAwesomeIcon icon="fa-brands fa-github" /> | sitio web <FontAwesomeIcon icon="fa-solid fa-globe" />  | products <FontAwesomeIcon icon="fa-solid fa-couch" /> | users <FontAwesomeIcon icon="fa-solid fa-user-group" />
 //cambiar background color a negro y palabritas en blanco
 
-function SideBar(){
+
+function SideBar(props){
+    // console.log("EL T PROPS", props)
+    // const scrollToAnchor = ()=>{
+    //     let anchorName = props.location.query.anchorName;
+    //     if (anchorName) {
+    //         let anchorElement = document.getElementById(anchorName);
+    //         if(anchorElement) { anchorElement.scrollIntoView(); }
+    //     }
+    // }
     return(
         <React.Fragment>
             {/*<!-- Sidebar -->*/}
@@ -53,14 +62,16 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <a className="nav-link" href="/#productsChart">
                         <i className="fas fa-couch"></i>
                         <span>Products</span></a>
                 </li>
 
                  {/*<!-- Nav Item - Tables -->*/}
                  <li className="nav-item">
-                    <a className="nav-link" href="/">
+                    <a 
+                    // onClick={document.getElementById('productsChart').scrollIntoView()}
+                    className="nav-link" href="/">
                         <i className="fas fa-user"></i>
                         <span>Users</span></a>
                 </li>

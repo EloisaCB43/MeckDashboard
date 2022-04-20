@@ -47,6 +47,7 @@ console.log("ESTA ES LA VARIABLE PRODUCTS", products)
 					{!isLoading && products && users && (<>
 					<TotalCards products={products} users={users} />
 					<ContentRowCenter products={products}/>
+					
 					<Chart products={products}/> </>)}
 					
 	
